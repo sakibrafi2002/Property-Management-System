@@ -7,7 +7,7 @@ urlpatterns = [
     path('users/<str:nid>/', UserDetailView.as_view(), name='user-detail'),
     
     # # Authentication
-    # path('auth/register/', register, name='register'),
-    # path('auth/login/', login_view, name='login'),
-    # path('auth/logout/', logout_view, name='logout'),
+    # path('users/register/', register, name='register'),
+    # path('users/login/', login_view, name='login'),
+    # path('users/logout/', logout_view, name='logout'),
 ]
