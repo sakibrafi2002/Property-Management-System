@@ -25,7 +25,7 @@ class Property(models.Model):
     property_history = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f"{self.owner} ({self.id} sqm)"
+        return f"{self.owner} ({self.id})"
 
 
 class Subscription(models.Model):

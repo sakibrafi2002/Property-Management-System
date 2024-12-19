@@ -8,7 +8,7 @@ class User(models.Model):
     members = models.IntegerField(
         validators=[MinValueValidator(1)],  # Ensure non-negative values
         help_text="Total number of members in the household."
-    )
+    ) 
     name = models.CharField(max_length=255,null=True, blank=True)
     adults = models.IntegerField(
         null=True,blank=True,
